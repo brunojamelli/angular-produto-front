@@ -1,4 +1,5 @@
-<table mat-table [dataSource]="produtos_array" class="mat-elevation-z8" style="width: 50%;">
+@if (produtos$ | async; as lista_produtos_local) {
+<table mat-table [dataSource]="produtos_array" class="mat-elevation-z8" style="width: 100px;">
   <!-- Position Column -->
   <ng-container matColumnDef="nome">
     <th mat-header-cell *matHeaderCellDef>Nome</th>
@@ -12,3 +13,6 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
+}@else {
+    <p>Carregando...</p>
+}
