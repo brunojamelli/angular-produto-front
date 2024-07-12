@@ -8,6 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Backend server
 for running this project run the backend app following the steps bellow
+[fake backend instructions](https://github.com/brunojamelli/fake-backend)
 
 ## Code scaffolding
 
